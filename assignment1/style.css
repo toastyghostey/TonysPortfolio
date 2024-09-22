@@ -1,0 +1,55 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	
+	font-family: "lucida console", "lucida sans typewriter";
+	background: #8DDBE0;
+	color: #090909;
+}
+		
+div#container {
+	/*border: 1px solid black;*/
+	width:900px;
+	margin:auto;
+	margin-top:50px;
+	background: #d3ffe9;
+	/* padding: 20px; */	
+}
+
+main {
+	padding: 20px;
+	text-shadow: 2px 2px 5px #9BC4BC;
+}
+
+header {
+	font-family: "Impact";
+	color: #4B5043;
+	text-align: center;
+}
+
+footer {
+	font-size: 0.8em;
+	text-align: right;
+}
+
+header, footer {
+	background: #8DDBE0;
+	color: #4B5043;
+	padding: 15px;
+	
+}
+

@@ -1,0 +1,106 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+@font-face {
+		font-family: alderwood;
+		font-style: normal;
+		src: url(fonts/alderwood-regular-webfont.woff) format(woff);
+}
+
+@font-face {
+		font-family: alderwood-texture;
+		font-style: normal;
+		src: url(fonts/alderwood-textured-webfont.woff) format(woff);
+}
+
+@font-face {
+		font-family: alderwood-oblique;
+		font-style: normal;
+		src: url(fonts/alderwood-oblique-webfont.woff) format(woff);
+}
+
+body {
+	background: #E4D6A7;
+	color: #9B2915;
+	
+}
+
+
+#container {
+	border: 1px;
+	position: relative;
+	width: 900px;
+	margin: auto;
+}
+
+
+p {
+	font-family: alderwood;
+	font-size: 4em;
+	}
+	
+p.clay {
+	font-family: alderwood-texture;
+	font-size: 20em;
+	position: relative;
+	rotate: -2deg;
+	top: -220px;
+	left: 375px;
+}	
+
+p.leftit {
+	font-family: alderwood;
+	font-size:3em;
+	position:relative;
+	rotate: 1deg;
+	top: -395px;
+	left: 20px;
+}
+
+p.bricks {
+	font-family: alderwood-texture;
+	font-size: 22em;
+	position: relative;
+	top: -575px;
+	left: 80px;
+	rotate: 2deg;
+	text-align: center;
+}
+
+p.bychance {
+	font-family: alderwood;
+	font-size: 9em;
+	position: absolute;
+	top: 560px;
+	left: 20px;
+	rotate: -1deg;
+	text-align: center;
+}
+		
+p.fortune {
+	font-family: alderwood-texture;
+	font-size: 17em;
+	position: relative;
+	top: -540px;
+	left: 80px;
+	rotate: 1deg;
+	text-align: center;
+}
+
+p.quote {
+	font-family: alderwood-oblique;
+	font-size: 6em;
+	position: relative;
+	top: -660px;
+	text-align: center;
+}

@@ -69,6 +69,7 @@ h2 {
 
 footer {
 	padding: 10px;
+	background:rgba(0,0,0,0.8);
 }
 
 
@@ -92,8 +93,10 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		margin:auto;
 	}
 	
-	
-		
+	footer {
+		width:725px;
+		margin:auto;
+	}
 	
 } /* closes 769px+ */
 
@@ -116,6 +119,10 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	#sectionComp {
 		float:right;
 		width:55%;		
+	}
+
+	footer {
+		width:1000px;
 	}
 	
 } /* closes 1024px+ */

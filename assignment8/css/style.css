@@ -1,0 +1,154 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+font-face {
+	font-family: 'toom';
+	src:  url('font/toom-regular.otf') format('otf');
+	font-weight: 400;
+	font-style:normal;
+}
+
+font-face {
+	font-family: 'toom';
+	src: url('font/toom-italic.otf') format('otf');
+	font-weight: 400;
+	font-style:italic;
+}
+
+font-face {
+	font-family: 'toom';
+	src: url('font/toom-bold-italic') format('otf');
+	font-weight: 400;
+	font-style:bold;
+}
+	
+font-face {
+	font-family: 'firebox';
+	src:  url('font/firebox-regular.otf') format('otf');
+	font-weight: 400;
+	font-style:normal;
+}
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	background-image: url('../img/newsprint.webp');
+	background-repeat: repeat;
+}
+
+p {
+	font-family: 'toom';
+}
+
+#container {
+	margin:1.5em;
+	padding:20px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	color: white;
+}
+
+header, footer {
+	margin:1.5em;
+	padding:20px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	color: white;
+}
+
+h1, h2, h3 {
+	font-family: 'firebox', normal;
+	letter-spacing: 1.5px;
+	text-align: center;
+	line-height: 1em;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+button {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	
+}
+
+section#McGinnisDead, section#SevenDead, section#ShivDead {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	padding:20px;
+
+}
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 70px;
+}
+
+h3 {
+	font-size: 60px;
+}
+
+#container{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+
+article {
+	flex: 1;
+	margin: 10px;
+}
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+container {
+	width: 950px;
+}
+	
+	
+	
+} /* closes 1024px+ */
+
+
+

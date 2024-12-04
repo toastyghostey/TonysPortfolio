@@ -1,0 +1,131 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 700
+
+.oswald-regular {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: <300>;
+  font-style: normal;
+}
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	background-image:url("../img/DEADLOCKweb.webp");
+	background-repeat:repeat;
+	background-size:100%;
+	font-family: Oswald;
+	
+}
+
+p {
+	
+}
+
+h1 {
+	text-align: center;
+	padding: 10px;
+	background:rgba(0,0,0,0.8);
+}
+
+h2 {
+	text-align: center;
+	padding:10px;
+	background:rgba(0,0,0,0)
+}
+
+#container {
+	margin:1em;
+	padding;0.75em;
+	color:white;
+	font-family: Oswald;
+}
+
+#sectionLaning {
+	background:#CCCCCC;
+	padding: 10px;
+	background:rgba(0,0,0,0.8);
+}
+
+#sectionComp {
+	border:1px solid back;
+	padding: 10px;
+	background:rgba(0,0,0,0.8);
+}
+
+footer {
+	padding: 10px;
+	background:rgba(0,0,0,0.8);
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	body {
+		background-repeat:repeat;
+	}
+	
+	#container {
+		width:725px;
+		margin:auto;
+	}
+	
+	footer {
+		width:725px;
+		margin:auto;
+	}
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+	#container {
+		width:1000px;
+	}
+	
+	#sectionLaning {
+		float:left;
+		width:40%;
+	}	
+	
+	#sectionComp {
+		float:right;
+		width:55%;		
+	}
+
+	footer {
+		width:1000px;
+	}
+	
+} /* closes 1024px+ */
+
+
+

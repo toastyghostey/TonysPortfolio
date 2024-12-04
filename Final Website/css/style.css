@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	background: #fcfbe8;
+}
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+/* ——— Begin Fonts ——— */
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.kode-mono-headers {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* ——— End Fonts ——— */
+
+/* VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+   Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later
+   VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
+
+/* ——— Begin Header ——— */
+
+.ernestLogo {
+	width: 200px; 
+	height: auto;
+}
+header {
+	padding:20px;
+	text-align:center;
+	background:#a90112;
+}
+h1, h2 {
+	padding:-40px;
+}
+h1 {
+	font-size:64px;
+	line-height:60px;
+}
+h2 {
+	font-size:32px;
+	line-height:35px;
+}
+.header {
+    background-color: #a90112;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.header span {
+    font-weight: bold;
+    font-size: 40px;
+}
+button {
+	background-color: #301F2F;
+    color: #C34536;
+    padding: 10px 20px;
+    text-align: center;
+	width:100%;
+	border: none;
+	font-family:'Kode Mono', monospace;
+	font-size:24px;
+	font-weight:1000;
+}
+.Navigation {
+    background-color: #C34536;
+    padding: 5px;
+}
+.Navigation ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+	font-family:'Kode Mono', monospace;
+	/* This is for the text within the buttons */
+}
+.Navigation a {
+    display: block;
+    color: #FCFBE8;
+	background: #A90112;
+	margin: 7px;
+	text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+	/* This is for the buttons proper */
+}
+.Navigation a:hover {
+    background: #FCFBE8;
+	color: black;
+}
+
+/* ——— End Header ——— */
+
+h1, h2, h3 {
+	font-family:'Kode Mono', monospace;
+	color:#FCFBE8;
+}
+
+/* ——— Begin Body ——— */
+p {
+    color: white;
+    margin: 10px 0;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#container {
+	margin:1.5em;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	color: white;
+	font-family:'roboto', sans-serif;
+	padding-bottom:100px;
+}
+.evidenceImage {
+	width: 550px; 
+	height: auto;
+	margin: 20px;
+}
+
+/* ——— End Body ——— */
+
+/* ——— Begin Footer ——— */
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding:20px;
+	text-align:center;
+	font-family:'Kode Mono', monospace;
+	background:#a90112;
+}
+
+/* ——— End Footer ——— */
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* VVVVVVVVVVVVVVVVVVVVVVVVVV
+   Minimum width for laptops.
+   VVVVVVVVVVVVVVVVVVVVVVVVVV */
+@media all and (min-width: 769px) {
+
+/* ——— Begin Header ——— */
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom:-30px;
+}
+h1 {
+	font-size: auto;
+	margin-left: 20px;
+}
+h2 {
+	font-size: auto;
+}
+.ernestLogo {
+  width: 125px; 
+  height: auto;
+}
+.Navigation ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Make the ul take up full width */
+}
+.Navigation li {
+    flex: 1; /* Make each li item take equal space */
+}
+/* ——— End Header ——— */
+
+#textboxContent {
+	display: flex;
+}
+
+} /* closes 769px+ */
+
+
+
+/* VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+   Minimum width for desktop screens.
+   VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
+@media all and (min-width: 1024px) {
+
+
+	
+} /* closes 1024px+ */
+
+
+

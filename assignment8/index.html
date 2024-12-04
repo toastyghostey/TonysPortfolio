@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Deadlock TOASTED.</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+<header>
+
+	<h1>Deadlock TOASTED Examples</p>
+
+</header>
+
+<body>
+
+  <div id="container">
+
+
+
+		<h2>What is Deadlock TOASTED?</h2>
+		<p><b>Deadlock</b> is a multiplayer game created by Valve Software that falls into the Multiplayer Online Battle Arena genre, a type of game where you pick a character with a specialized toolset (often called a champion or in this case a Hero) and you use this character on a large map to destroy an enemy team's base and defenses in an effort to destroy their flagship monster &mdash; in Deadlock, this takes the form of a mysterious all-powerful entity known as "The Patron"
+			</p>	
+		<p><i>Deadlock TOASTED</i> is a currently on-going mod project between myself and a friend to replace the currently existing in-game icons with cartoony versions of the Heroes that I have illustrated, that as well are reactive to changes in the game &mdash; namely when the character is defeated in combat. Below are three examples of the characters normal icon, and their defeated icon with a brief explanation.
+			</p>
+		
+		
+		<article>
+		<section id="McGinnis"><!-- Opens McGinnis' Section -->
+		
+		<h3>McGinnis</h3>
+		<p>McGinnis is an engineer-type character that uses machinery like turrets and healing pylons to dominate the field.
+			</p>
+		<img src="img/mcginnisAlive.svg" alt="McGinnis, the Mechanic">
+
+		<button id="McGinnisButton">Show Defeated Icon</button>
+			
+			<section id="McGinnisDead"><!-- Starts McGinnis' Dead Section -->
+				<p>When McGinnis is defeated, her machines blow up in her face in a cartoonish manner.
+					</p>
+				<img src="img/mcginnisDead.svg" alt="McGinnis with soot and oil on her face.">
+			</section><!-- Closes McGinnis' Dead Section -->
+		
+		</section><!-- Closes McGinnis Section -->
+		</article>
+		
+		<article>
+		<section id="Seven"><!-- Opens Seven's Section -->
+		
+		<h3>Seven</h3>
+		<p>Seven is a death-row inmate who merged with his electric chair and harnesses its deadly power to fight foes.
+			</p>
+		<img src="img/sevenAlive.svg" alt="Seven, the Convict">
+		
+		<button id="SevenButton">Show Defeated Icon</button>
+			
+			<section id="SevenDead"><!-- Starts Seven's Dead Section -->
+				<p>When Seven is defeated, he short-circuts, and plumes of smoke pour out.
+					</p>
+				<img src="img/sevenDead.svg" alt="Seven with cartoony x eyes and smoke pouring out of him.">
+			</section><!-- Closes Seven's Dead Section -->
+		
+		</section><!-- Closes Seven Section -->
+		</article>
+		
+		<article>
+		<h3>Shiv</h3>
+		<p>Shiv is a delinquent turned supernatural monster hunter with an unorthadoxed sense of style - both fighting, and fashion.
+			</p>
+		<img src="img/shivAlive.svg" alt="Shiv, the Monster Hunter">
+		
+		<button id="ShivButton">Show Defeated Icon</button>
+			
+			<section id="ShivDead"><!-- Starts Shiv's Dead Section -->
+				<p>When Shiv is defeated, he loses his pompadour in a close shave.
+					</p>
+				<img src="img/shivDead.svg" alt="Shiv with his iconic pompadour taken off.">
+			</section><!-- Closes Shiv's Dead Section -->
+		
+		</section><!-- Closes Shiv's Section -->
+		</article>
+
+  </div><!-- close "container" -->
+ 
+   <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+<script>
+
+  $('section#McGinnisDead').hide();
+  $('section#SevenDead').hide();
+  $('section#ShivDead').hide();
+
+  $(document).ready(function() {
+
+	$('button#McGinnisButton').click(function() {
+		$('section#McGinnisDead').toggle();
+	});
+	
+	$('button#SevenButton').click(function() {
+		$('section#SevenDead').toggle();
+	});
+	
+	$('button#ShivButton').click(function() {
+		$('section#ShivDead').toggle();
+	});
+	
+	
+  }); //close .ready()
+</script>
+
+</body>
+	
+<footer>
+	
+	<p>&#169;ANTHONY CARRERA 2024
+		</p>
+		
+</footer>
+	
+</html> 

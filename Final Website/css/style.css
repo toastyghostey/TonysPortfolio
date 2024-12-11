@@ -162,14 +162,21 @@ button {
 	color: black;
 }
 
+
+
 /* ——— End Header ——— */
+
+
 
 h1, h2, h3 {
 	font-family:'Kode Mono', monospace;
 	color:#FCFBE8;
 }
 
+
+
 /* ——— Begin Body ——— */
+
 p {
     color: white;
     margin: 10px 0;
@@ -189,9 +196,88 @@ p {
 	width: 550px; 
 	height: auto;
 	margin: 20px;
+	display: flex;
+}
+.textboxList {
+	margin:0.5em;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	padding: 10px;
+}
+.shirtImage {
+	width: 550px; 
+	height: auto;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
 }
 
 /* ——— End Body ——— */
+
+
+
+/* ————— Form ————— */
+
+form {
+  width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+textarea {
+  height: 150px;
+}
+input[type="submit"] {
+  background-color: #A90112;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ——— Form END ——— */
+
+
+
+/* ——— shirt order ——— */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding;
+  cursor: pointer;
+}
+/* ——— shirt END ——— */
+
+
 
 /* ——— Begin Footer ——— */
 
@@ -247,9 +333,7 @@ h2 {
 }
 /* ——— End Header ——— */
 
-#textboxContent {
-	display: flex;
-}
+
 
 } /* closes 769px+ */
 
@@ -260,7 +344,19 @@ h2 {
    VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
 @media all and (min-width: 1024px) {
 
-
+#textboxContent {
+	display: flex;
+}
+.evidenceImage {
+	width: 430px; 
+	height: auto;
+	margin: 20px;
+}
+.shirtImage {
+	width: 700px; 
+	height: auto;
+	position: flex;
+}
 	
 } /* closes 1024px+ */
 

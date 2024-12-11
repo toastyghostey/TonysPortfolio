@@ -168,7 +168,7 @@ button {
 
 
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
 	font-family:'Kode Mono', monospace;
 	color:#FCFBE8;
 }
@@ -210,6 +210,21 @@ p {
 	margin: 10px;
 	display: flex;
 	justify-content: center;
+}
+
+h4 {
+	margin:20px;
+	margin-top: 30px;
+	font-size: 50px;
+	line-height: 45px;
+	margin-bottom: -5px;
+}
+
+h5 {
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 25px;
+	margin-bottom:-2px;
 }
 
 /* ——— End Body ——— */
@@ -256,19 +271,17 @@ form {
   max-width: 400px;
   margin: 0 auto;
 }
-
 label {
   display: block;
   margin-bottom: 10px;
 }
-
 select, textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin: auto;
 }
-
 input[type="submit"] {
   background-color: #4CAF50;
   color: white;
@@ -284,6 +297,7 @@ input[type="submit"] {
 footer {
 	position: fixed;
 	bottom: 0;
+	left: 0;
 	width: 100%;
 	padding:20px;
 	text-align:center;
@@ -306,6 +320,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 769px) {
 
 /* ——— Begin Header ——— */
+
 .header-container {
 	display: flex;
 	align-items: center;
@@ -333,7 +348,11 @@ h2 {
 }
 /* ——— End Header ——— */
 
-
+#container {
+	max-width:1080px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 } /* closes 769px+ */
 
@@ -353,7 +372,7 @@ h2 {
 	margin: 20px;
 }
 .shirtImage {
-	width: 700px; 
+	width: 500px; 
 	height: auto;
 	position: flex;
 }
